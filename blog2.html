@@ -1,0 +1,99 @@
+<html>
+
+<head>
+    <title>Musings of a Data Nerd</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css">
+    </noscript>
+    <style>
+        code {
+            font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+            font-size: 0.9em;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- Pagination -->
+
+        <!-- Blog Post 1 -->
+        <div class="blog-post">
+            <h2 class="post-title">Basic Data Cleaning in Action </h2>
+            
+            <p> 1. Removing Duplicates </p>
+            <pre>
+                <code>
+            import pandas as pd
+            df = pd.read_csv("data.csv")
+            df.drop_duplicates(inplace=True)
+            df.to_csv("cleaned_data.csv", index=False)
+            
+				</code>
+            </pre>
+            <p></p>
+            <p> 2. Handling missing values </p>
+            <pre>
+            <code>
+            import pandas as pd
+            df = pd.read_csv("data.csv")
+            df.fillna(0, inplace=True) # replace missing values with 0
+            df.to_csv("cleaned_data.csv", index=False)
+
+			</code></pre>
+            <p></p>
+            <p> 3. Removing unwanted characters </p>
+<pre>
+            <code>
+            import pandas as pd
+            df = pd.read_csv("data.csv")
+            df['column_name'] = df['column_name'].str.replace('[^\w\s]','')
+            df.to_csv("cleaned_data.csv", index=False)
+
+				</code></pre>
+            <p></p>
+            <p> 4. Changing data types </p>
+<pre>
+            <code>
+            import pandas as pd
+            df = pd.read_csv("data.csv")
+            df['column_name'] = df['column_name'].astype(int)
+            df.to_csv("cleaned_data.csv", index=False)
+
+				</code></pre>
+            
+
+        </div>
+
+        <!-- Blog Post 2 
+		<div class="blog-post">
+			<h2 class="post-title">The importance of responsive design</h2>
+			<div class="post-summary">
+				<p>In today's digital world, it's essential for a website to be easily accessible on any device. This is
+					where responsive design comes in. In this post, we'll explore what responsive design is and why it's
+					so important for a successful website.</p>
+				<a href="blog-post-2.html" class="read-more-link">Read More</a>
+			</div>
+		</div>-->
+
+        <!-- Blog Post 3 
+		<div class="blog-post">
+			<h2 class="post-title">Tips for creating great content for your website</h2>
+			<div class="post-summary">
+				<p>Creating great content is essential for any website to be successful. In this post, we'll give you
+					some tips and tricks to help you create content that engages your audience and keeps them coming
+					back for more.</p>
+				<a href="blog-post-3.html" class="read-more-link">Read More</a>
+			</div>
+		</div>-->
+
+    </div>
+    <div id="bg2-2.jpg"></div>
+
+</body>
+
+</html>
