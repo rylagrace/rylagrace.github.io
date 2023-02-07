@@ -1,102 +1,75 @@
-<!DOCTYPE html>
 <html>
 
-
 <head>
-	<title>My Blog</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
+	<title>Musings of a Data Nerd</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="assets/css/main.css">
 	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" />
+		<link rel="stylesheet" href="assets/css/noscript.css">
 	</noscript>
+
 </head>
 
 <body>
-	<!-- Wrapper -->
 	<div id="wrapper">
-		<header>
-			<nav>
-				<ul>
-					<li><a href="#featured">Featured</a></li>
-					<li><a href="#archives">Archives</a></li>
-				</ul>
-			</nav>
-		</header>
-		<main>
-			<section id="featured">
-				<h2>Featured Articles</h2>
-				<ul>
-					<li>
-						<h3><a href="#" id="article-1">The Importance of Clean Data in Analytics</a></h3>
-						<p>In this blog post, I will be discussing the importance of clean data in analytics and how it affects the accuracy of results. With the rise of big data, it is crucial to have a proper data cleaning process in place to ensure that the data is ready for analysis.</p>
-						<button id="read-more-1">Read More</button>
-						<div id="article-1-details" style="display:none">
-							<h4>Article 1 Details:</h4>
-							<p><b>Author:</b> John Doe</p>
-							<p><b>Published Date:</b> 01/01/2022</p>
-							<p><b>Category:</b> Technology</p>
-							<p><b>Tags:</b> Artificial Intelligence, Machine Learning, Deep Learning</p>
-						</div>
-					</li>
-					<li>
-						<h3><a href="#" id="article-2">Automating Project Management with Python</a></h3>
-						<p>In this blog post, I will be sharing my experience in using Python to automate various project management tasks. By using Python, I was able to save time and improve the efficiency of my team. In this post, I will be providing examples and code snippets that you can use to automate your own project management tasks.</p>
-						<button id="read-more-2">Read More</button>
-						<div id="article-2-details" style="display:none">
-							<h4>Article 2 Details:</h4>
-							<p><b>Author:</b> Jane Doe</p>
-							<p><b>Published Date:</b> 01/02/2022</p>
-							<p><b>Category:</b> Health</p>
-							<p><b>Tags:</b> Nutrition, Exercise, Wellness</p>
-						</div>
-					</li>
-				</ul>
-			</section>
-			<section id="archives">
-				<h2>Archived Articles</h2>
-				<ul>
-					<li><a href="#">Article 3</a></li>
-					<li><a href="#">Article 4</a></li>
-					<li><a href="#">Article 5</a></li>
-				</ul>
-			</section>
-		</main>
-		<footer>
-			<p>Copyright &copy; 2023 My Blog</p>
-		</footer>
-		<script>
-			const readMoreButtons = document.querySelectorAll("button[id^='read-more-']");
-			readMoreButtons.forEach((button) => {
-				button.addEventListener("click", (event) => {
-					const detailsDiv = event.target.
-						button.addEventListener("click", (event) => {
-							const detailsDiv = event.target.parentNode.querySelector(".details");
-							detailsDiv.classList.toggle("visible");
-						});
-				});
-		</script>
-		<!-- Article Section -->
-		<section id="articles">
-			<div class="container">
-				<h2 class="text-center">Recent Articles</h2>
-				<p class="text-center">Check out our latest articles</p>
-				<div class="row">
-					<div class="col-md-4" *ngFor="let article of articles">
-						<div class="card mb-4">
-							<img class="card-img-top" [src]="article.image" alt="Article Image">
-							<div class="card-body">
-								<h4 class="card-title">{{ article.title }}</h4>
-								<p class="card-text">{{ article.description }}</p>
-								<a (click)="openArticle(article.title, article.description, article.author, article.publish_date)"
-									class="btn btn-primary">Read More</a>
-							</div>
-						</div>
-					</div>
-				</div>
+		<!-- Pagination -->
+
+		<!-- Blog Post 1 -->
+		<div class="blog-post">
+			<h2 class="post-title">The Importance of Clean Data: Why a Little Bit of Data Hygiene Goes a Long Way</h2>
+			
+			<p>Hi there data enthusiasts! As someone who's passionate about all things data, I'm sure you'll agree that
+				data is the lifeblood of any business. It's the raw material that drives decisions, whether it's
+				identifying new customers or measuring success. But the thing is, data is only as good as its quality.
+				And that's why clean data is so critical.</p>
+			<p>Clean data is like the shiny new suit in your wardrobe – it's always ready to wear, it fits perfectly,
+				and it looks great. Clean data is accurate, complete, and consistent, free of errors, duplicates, and
+				inconsistencies. And best of all, it's easy to use and analyze. Clean data is the foundation of data
+				management, and without it, you're flying blind.</p>
+			<p>Now, I know what you're thinking – clean data is easy to talk about, but it's not always easy to find.
+				Especially in certain industries, like healthcare, finance, and retail. They're notorious for having bad
+				data, and it's not their fault. There are lots of reasons why data goes bad, like human error, data
+				entry mistakes, outdated information, and siloed systems that don't play nice with each other. But
+				here's the good news – even the worst data can be salvaged with the right tools and techniques. You just
+				need to know how to handle it.</p>
+			<p>Data cleansing, data deduplication, and data normalization – these are the weapons in your data
+				management arsenal. With these skills, you can identify and correct errors, eliminate duplicates, and
+				standardize data so it's consistent and usable.</p>
+			<p>In conclusion, clean data is like a sharp knife in the kitchen – it's essential for getting the job done
+				right. And while bad data is a common problem, it's not a lost cause. With the right skills and tools,
+				you can turn even the most corrupted data into a clean, usable asset. So, whether you're a seasoned data
+				pro or just starting out, don't forget to give your data a little bit of love and attention. Because
+				when it comes to data, a little bit of hygiene goes a long way!</p>
+			<!--<a href="blog-post-1.html" class="read-more-link">Read More</a>-->
+
+		</div>
+
+		<!-- Blog Post 2 
+		<div class="blog-post">
+			<h2 class="post-title">The importance of responsive design</h2>
+			<div class="post-summary">
+				<p>In today's digital world, it's essential for a website to be easily accessible on any device. This is
+					where responsive design comes in. In this post, we'll explore what responsive design is and why it's
+					so important for a successful website.</p>
+				<a href="blog-post-2.html" class="read-more-link">Read More</a>
 			</div>
-		</section>
+		</div>-->
+
+		<!-- Blog Post 3 
+		<div class="blog-post">
+			<h2 class="post-title">Tips for creating great content for your website</h2>
+			<div class="post-summary">
+				<p>Creating great content is essential for any website to be successful. In this post, we'll give you
+					some tips and tricks to help you create content that engages your audience and keeps them coming
+					back for more.</p>
+				<a href="blog-post-3.html" class="read-more-link">Read More</a>
+			</div>
+		</div>-->
+
 	</div>
+	<div id="bg2-2.jpg"></div>
+
 </body>
 
 </html>

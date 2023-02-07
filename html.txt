@@ -1,0 +1,99 @@
+<html>
+
+<head>
+    <title>Blog with Pagination and Read More - Dimension by HTML5 UP</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css">
+    </noscript>
+
+    <style>
+        .read-more-content {
+            display: none;
+        }
+
+        /* Article */
+        section {
+            margin: 3em 0;
+        }
+
+        header h2 {
+            font-size: 2em;
+            margin: 0.5em 0;
+        }
+
+        header p {
+            font-size: 1.5em;
+            margin: 0.5em 0;
+        }
+
+        .image {
+            display: inline-block;
+            margin: 0 2em 2em 0;
+            width: 40%;
+        }
+
+        .image img {
+            width: 100%;
+            height: auto;
+        }
+
+        .image.fit {
+            width: 100%;
+        }
+
+        p {
+            font-size: 1.25em;
+            margin: 0.5em 0;
+        }
+
+        a.button {
+            display: inline-block;
+            padding: 1em 2em;
+            background: #333;
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <section>
+            <header>
+                <h2>Article Title</h2>
+                <p>Article Subtitle</p>
+            </header>
+            <a href="#" class="image fit"><img src="images/pic01.jpg" alt="" /></a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent
+                taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu
+                nibh porttitor amet fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut
+                ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc
+                lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus
+                et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque
+                aliquam maximus risus, vel sed vehicula. </p>
+            <a href="#" class="button">Learn More</a>
+        </section>
+
+    </div>
+    <div id="bg"></div>
+    <script>
+        const readMoreBtn = document.querySelector(".read-more-btn");
+        const readLessBtn = document.querySelector(".read-less-btn");
+        const readMoreContent = document.querySelector(".read-more-content");
+        readMoreBtn.addEventListener("click", function () {
+            readMoreContent.style.display = "block";
+            readMoreBtn.style.display = "none";
+        });
+        readLessBtn.addEventListener("click", function () {
+            readMoreContent.style.display = "none";
+            readMoreBtn.style.display = "inline-block";
+        });
+    </script>
+</body>
+
+</html>
